@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lactate 319.8 mg/dL in a cirrhotic patient — case learning site</title>
+<meta name="description" content="De-identified teaching site for a 2026/11/02 morning-meeting case report: LOD lactate assay interference, glycolate cross-reactivity and clinicopathological correlation.">
+<style>
+  :root{
+    --ink:#0E2841; --ink2:#33475b; --line:#d8dee6; --bg:#ffffff; --soft:#f4f6f9;
+    --accent:#156082; --accent2:#E97132; --ok:#196B24; --warn:#96607D; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",-apple-system,"Segoe UI",system-ui,sans-serif;
+    line-height:1.65;font-size:17px}
+  header{background:var(--ink);color:#fff;padding:28px 20px 22px}
+  .wrap{max-width:960px;margin:0 auto}
+  header .kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#9fc2d6;margin:0 0 8px}
+  header h1{font-size:clamp(21px,5.2vw,31px);line-height:1.3;margin:0 0 10px;font-weight:700}
+  header p{margin:0;color:#cfdae3;font-size:14px}
+  nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);
+    overflow-x:auto;-webkit-overflow-scrolling:touch}
+  nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:6px 10px;min-width:max-content}
+  nav a{display:block;padding:9px 12px;border-radius:999px;color:var(--ink2);text-decoration:none;
+    font-size:14px;white-space:nowrap}
+  nav a:hover,nav a:focus-visible{background:var(--soft);color:var(--accent)}
+  main{padding:8px 20px 60px}
+  section{padding:26px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:clamp(19px,4.4vw,24px);margin:0 0 4px}
+  h2 .zh{display:block;font-size:14px;font-weight:400;color:var(--ink2);margin-top:4px}
+  h3{font-size:16px;margin:22px 0 8px}
+  p{margin:10px 0}
+  .lede{color:var(--ink2);font-size:15px}
+  .grid{display:grid;gap:12px}
+  @media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;background:#fff}
+  .card h4{margin:0 0 6px;font-size:15px}
+  .card p{margin:6px 0;font-size:14.5px;color:var(--ink2)}
+  .tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);
+    color:var(--ink2);background:var(--soft);margin:0 6px 6px 0}
+  .tag.fact{border-color:#b7d7bd;background:#eef7f0;color:var(--ok)}
+  .tag.inf{border-color:#c8dcea;background:#eef4f9;color:var(--accent)}
+  .tag.open{border-color:#e6cdd8;background:#fbf1f5;color:var(--warn)}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--radius);margin:12px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+  caption{caption-side:top;text-align:left;font-size:13px;color:var(--ink2);padding:8px 10px}
+  th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  thead th{background:var(--soft);font-weight:700;color:var(--ink);position:sticky;top:0}
+  tbody tr:last-child td{border-bottom:0}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .hi{font-weight:700;color:var(--warn)}
+  .lo{font-weight:700;color:var(--accent)}
+  /* timeline */
+  ol.tl{list-style:none;margin:14px 0;padding:0 0 0 18px;border-left:2px solid var(--line)}
+  ol.tl li{position:relative;padding:0 0 16px 14px}
+  ol.tl li:before{content:"";position:absolute;left:-25px;top:7px;width:11px;height:11px;border-radius:50%;
+    background:#fff;border:2px solid var(--accent)}
+  ol.tl li.hot:before{border-color:var(--accent2);background:var(--accent2)}
+  ol.tl time{display:block;font-size:12.5px;letter-spacing:.04em;color:var(--accent);font-weight:700}
+  ol.tl strong{font-size:15px}
+  ol.tl span{display:block;font-size:14px;color:var(--ink2)}
+  /* tabs */
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 0}
+  .tabs button{font:inherit;font-size:14px;padding:9px 14px;border-radius:999px;border:1px solid var(--line);
+    background:#fff;color:var(--ink2);cursor:pointer}
+  .tabs button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .tabs button:focus-visible{outline:3px solid #9fc2d6;outline-offset:2px}
+  .panel{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-top:10px}
+  .panel[hidden]{display:none}
+  dl{margin:0;font-size:14.5px}
+  dt{font-weight:700;margin-top:10px}
+  dd{margin:2px 0 0;color:var(--ink2)}
+  /* quiz */
+  .q{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin:12px 0}
+  .q p.stem{font-weight:700;margin:0 0 10px}
+  .opts{display:grid;gap:8px;margin:0 0 10px}
+  .opts label{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;cursor:pointer;font-size:14.5px}
+  .opts label:hover{background:var(--soft)}
+  .opts input{margin-top:4px;flex:0 0 auto}
+  .opts label.correct{border-color:#b7d7bd;background:#eef7f0}
+  .opts label.wrong{border-color:#e6cdd8;background:#fbf1f5}
+  .btn{font:inherit;font-size:14.5px;padding:10px 18px;border-radius:10px;border:0;background:var(--accent);
+    color:#fff;cursor:pointer}
+  .btn:hover{filter:brightness(1.08)}
+  .btn:focus-visible{outline:3px solid #9fc2d6;outline-offset:2px}
+  .fb{margin-top:10px;font-size:14.5px;padding:12px 14px;border-radius:10px;background:var(--soft);
+    border-left:4px solid var(--accent)}
+  .fb[hidden]{display:none}
+  .fb .src{display:block;margin-top:6px;font-size:13px;color:var(--ink2)}
+  .fb.good{border-left-color:var(--ok)}
+  .fb.bad{border-left-color:var(--warn)}
+  ul.plain{margin:8px 0;padding-left:20px}
+  ul.plain li{margin:6px 0;font-size:15px}
+  .key{background:var(--soft);border-radius:var(--radius);padding:14px 16px;margin:14px 0}
+  .key strong{color:var(--ink)}
+  footer{background:var(--soft);padding:22px 20px;color:var(--ink2);font-size:13.5px}
+  .refs{font-size:13.5px;color:var(--ink2);padding-left:20px}
+  .refs li{margin:8px 0}
+  a{color:var(--accent)}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:10px;top:10px;background:#fff;padding:10px 14px;border-radius:8px;z-index:50}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Laboratory Medicine · Morning Meeting · 2026/11/02</p>
+    <h1>Is a lactate of 319.8 mg/dL real?<br>A 76-year-old man with HCC and refractory shock</h1>
+    <p>Presenter: R1 許耕豪 ｜ 去識別化教學網站（無姓名、病歷號、生日）｜ 網站內容與當日簡報同一份已核實資料</p>
+  </div>
+</header>
+
+<nav aria-label="章節導覽">
+  <div class="wrap" style="padding:0">
+    <ul>
+      <li><a href="#case">Case recap</a></li>
+      <li><a href="#methods">Method explorer</a></li>
+      <li><a href="#correlation">Clinical correlation</a></li>
+      <li><a href="#quiz">Knowledge check</a></li>
+      <li><a href="#takehome">Take-home</a></li>
+      <li><a href="#refs">References</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap">
+
+<section id="case">
+  <h2>Case recap <span class="zh">病例摘要、關鍵時間軸與原始問題</span></h2>
+  <p class="lede">一位 HBV 相關肝硬化 Child C、反覆復發 HCC 的 76 歲男性，因腹脹與下肢水腫入院，住院第 26 天進入難治性休克，臨終前中央實驗室乳酸達 319.8 mg/dL（35.5 mmol/L）。</p>
+
+  <ol class="tl">
+    <li><time>08/16 — D0</time><strong>急診：腹脹、雙下肢水腫 2 週</strong><span>Na 118→117 mEq/L、CRP 121.48 mg/L、WBC 16.8 K（seg 85%）、T-bil 7.8 mg/dL、lactate 12.1 mg/dL（正常）</span></li>
+    <li><time>08/17</time><strong>腹部超音波</strong><span>HCC S5/8 7.37 cm、S7 8.99 cm；疑 CHD/CBD invasion；右側門靜脈廣泛栓塞；中量腹水</span></li>
+    <li><time>08/20</time><strong>Pigtail 腹水引流</strong><span>WBC 52/µL、TP 0.7 g/dL、Rivalta negative、培養陰性（不支持 SBP）</span></li>
+    <li><time>08/27</time><strong>上消化道出血</strong><span>Coffee-ground ~100 g、SBP 79 mmHg；家屬拒絕插管與胃鏡</span></li>
+    <li><time>09/01 — D16</time><strong>肝昏迷 + AKI/HRS，轉 MICU</strong><span>NH₃ 212 µg/dL、BW 47.5→40.5 kg；terlipressin</span></li>
+    <li><time>09/08</time><strong>MRI：腫瘤 ~10 cm</strong><span>右側門靜脈與肝靜脈栓塞、icteric HCC、癌性腹膜炎、EV/GV</span></li>
+    <li class="hot"><time>09/09 — D24</time><strong>嗆到後休克</strong><span>BP 62/37 mmHg；meropenem + teicoplanin；Levophed；pH 7.188、HCO₃⁻ 8.5、lactate 23.4 mg/dL</span></li>
+    <li class="hot"><time>09/10</time><strong>大量出血、插管、CVVH</strong><span>NG 鮮血 800 mL + 血便 400 mL；ETT+MV；lactate 117.9 → 219.1 mg/dL</span></li>
+    <li class="hot"><time>09/11 — D26</time><strong>DIC、臨終</strong><span>INR 3.5、D-dimer 27.46、FDP 38.5；AST 6290 / ALT 3014；lactate 319.8 mg/dL；13:37 死亡（DNR）</span></li>
+  </ol>
+
+  <div class="key">
+    <strong>原始問題（來自 MICU 照會，原文保留）</strong>
+    <p style="font-size:14.5px;margin:8px 0 0">「病史：Chronic alcoholism，近期疑似飲用假酒。臨床表現：生命徵象穩定，無休克徵象……Lactate 320 mg/dL（約 35.5 mmol/L），由中央實驗室 Beckman Coulter AU 測得。High anion gap metabolic acidosis（AG 41），Osmolal gap 39……院內 POCT 血氣機沒有開放 Lactate 項目。臨床疑問：病人無明顯休克，難以單用 Type A lactic acidosis 解釋高達 320 mg/dL 的乳酸；臨床醫師懷疑是否為假酒代謝物（Glycolate / Glyoxylate）造成儀器無法分辨而出現偽陽性。」</p>
+    <p style="font-size:14px;margin:10px 0 0"><span class="tag open">重要落差</span>題目情境與病歷不符：病歷記載已戒酒 5 年、血壓 62/37、三種升壓劑、CVVH；AG 41／OG 39／NH₃ 1260／INR 9.0 亦與檢驗報告（AG 計算 51.5、未驗滲透壓、NH₃ 最高 332、INR 最高 3.5）不同。本站與簡報一律以病歷與檢驗報告為準，並在方法學討論時使用題目設定。</p>
+  </div>
+</section>
+
+<section id="methods">
+  <h2>Method explorer <span class="zh">檢驗原理、方法差異與機台比較（可切換）</span></h2>
+  <p class="lede">三種乳酸測定原理，決定「交叉反應」與「干擾方向」完全不同。以下數值與敘述均取自各原廠 IFU（2022–2024 年版）。</p>
+
+  <div class="tabs" role="tablist" aria-label="乳酸測定方法">
+    <button role="tab" id="t-au" aria-controls="p-au" aria-selected="true">Beckman AU · OSR6193</button>
+    <button role="tab" id="t-cobas" aria-controls="p-cobas" aria-selected="false">Roche cobas · LACT2</button>
+    <button role="tab" id="t-alin" aria-controls="p-alin" aria-selected="false">Abbott Alinity · Lactic Acid2</button>
+    <button role="tab" id="t-ldh" aria-controls="p-ldh" aria-selected="false">LDH UV（參考方法）</button>
+    <button role="tab" id="t-gly" aria-controls="p-gly" aria-selected="false">Glycolate 交叉反應</button>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p-au" aria-labelledby="t-au" tabindex="0">
+    <h4>Beckman Coulter AU — LACT (OSR6193)</h4>
+    <dl>
+      <dt>原理</dt><dd>LOD 氧化 L-lactate → pyruvate + H₂O₂；POD 催化 H₂O₂ + 4-aminoantipyrine + 氫供體（TOOS）→ 呈色 quinoneimine，光度終點法。</dd>
+      <dt>檢體</dt><dd>氟化鈉／草酸鉀血漿（不用血清）；抽血後 15 分鐘內離心、冰浴。<strong>IFU 明列：icteric 與 hemolyzed 檢體應避免。</strong></dd>
+      <dt>線性範圍</dt><dd>0.22–13.32 mmol/L（2–120 mg/dL）→ 本案 145、219、232、319.8 皆超出上線，必須稀釋。</dd>
+      <dt>干擾（IFU 實測）</dt><dd>黃疸 &lt;10% 或 0.25 mmol/L，最高測到 bilirubin 8 mg/dL；溶血 &lt;5%（Hb ≤5 g/L）；ascorbate &lt;10%（≤2 mg/dL）；lipemia &lt;3%（≤1000 mg/dL）。</dd>
+      <dt>方向</dt><dd>NAC 治療與 metamizol（dipyrone）採血 → <strong>假性偏低</strong>。IFU 未列 glycolate／glyoxylate。</dd>
+      <dt>校正</dt><dd>System Calibrator 66300，可追溯至 gravimetric 一級標準（reagent-grade L-lactate）；total CV 1.7–2.1%。</dd>
+    </dl>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p-cobas" aria-labelledby="t-cobas" tabindex="0" hidden>
+    <h4>Roche cobas c — LACT2 (Lactate Gen.2)</h4>
+    <dl>
+      <dt>原理</dt><dd>同為 LOD + POD 呈色法（4-AAP + 氫供體）。<strong>R1 內含 ascorbate oxidase（cucumber）</strong>，用以削減維生素 C 干擾。</dd>
+      <dt>檢體</dt><dd>NaF/K-oxalate 或 NaF/Na-heparin 血漿；不用血清；15 分鐘內離心。</dd>
+      <dt>與 AU 的差異</dt><dd>同樣是 LOD 酵素法 → <strong>跨平台一致無法排除 glycolate</strong>；ascorbate oxidase 使還原劑干擾的方向與幅度可能不同。</dd>
+    </dl>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p-alin" aria-labelledby="t-alin" tabindex="0" hidden>
+    <h4>Abbott Alinity c — Lactic Acid2</h4>
+    <dl>
+      <dt>原理</dt><dd>LOD → pyruvate + H₂O₂；POD 催化 H₂O₂ 與 TODB + 4-AAP 氧化偶聯，形成 quinoneimine 染料，<strong>604 nm</strong> 定量。</dd>
+      <dt>試劑</dt><dd>TODB 1.186 g/L；4-AAP 0.325 g/L；LOD 2.400 kU/L；POD 4.000 kU/L。</dd>
+      <dt>意義</dt><dd>色原與波長與 AU（TOOS/4-AAP）不同，但受質特異性仍取決於 LOD。</dd>
+    </dl>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p-ldh" aria-labelledby="t-ldh" tabindex="0" hidden>
+    <h4>LDH UV 法 — 真正有鑑別力的「第二方法」</h4>
+    <dl>
+      <dt>原理</dt><dd>L-lactate + NAD⁺ —LDH→ pyruvate + NADH，340 nm 吸光度上升；不使用 LOD，因此<strong>理論上不受 glycolate 干擾</strong>。</dd>
+      <dt>現況</dt><dd>目前主流生化平台少用；文獻（Tintu 2013）中只有 LDH 法不受 glycolate／glyoxylate 影響。</dd>
+      <dt>臨床用途</dt><dd>若院內可取得，LOD 與 LDH 法之間的差距（lactate gap）才是可解釋的證據；單靠三台 LOD 平台互比不足。</dd>
+    </dl>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p-gly" aria-labelledby="t-gly" tabindex="0" hidden>
+    <h4>Glycolate / glyoxylate 為何會「變成乳酸」</h4>
+    <dl>
+      <dt>機轉</dt><dd>glycolate 亦是 LOD 的受質：glycolate + O₂ → glyoxylate + H₂O₂。干擾發生在<strong>酵素層次</strong>，所以不分比色或電極法。</dd>
+      <dt>文獻</dt><dd>Tintu 2013（31 家醫院、20 種分析儀）：所有血氣機與多數 LOD 生化法假性升高，LDH 法不受影響；formate、oxalate、ethylene glycol 本身不干擾。Brindley 2007（CMAJ）：ABL700 嚴重高估，而 40 mmol/L glycolate 下 Beckman LX20 與 Vitros 僅升 ≤4 mmol/L。</dd>
+      <dt>甲醇呢</dt><dd>methanol 的代謝物是 <strong>formate</strong>，不是 LOD 受質 → 不干擾乳酸測定。這一點常被混淆。</dd>
+    </dl>
+  </div>
+
+  <h3>跨平台比較表</h3>
+  <div class="scroll">
+    <table>
+      <caption>三台院內平台的乳酸試劑（資料來源：各原廠 IFU）</caption>
+      <thead><tr><th>項目</th><th>Beckman AU OSR6193</th><th>Roche cobas LACT2</th><th>Abbott Alinity Lactic Acid2</th></tr></thead>
+      <tbody>
+        <tr><td>酵素</td><td>LOD + POD</td><td>LOD + POD（+ ascorbate oxidase）</td><td>LOD + POD</td></tr>
+        <tr><td>呈色系統</td><td>4-AAP + TOOS，終點法</td><td>4-AAP + 氫供體，呈色終點</td><td>TODB + 4-AAP，604 nm</td></tr>
+        <tr><td>線性上限</td><td>120 mg/dL（13.32 mmol/L）</td><td>依 IFU（未逐項核對）</td><td>依 IFU（未逐項核對）</td></tr>
+        <tr><td>檢體</td><td>NaF/oxalate 血漿</td><td>NaF/K-oxalate 或 NaF/Na-heparin 血漿</td><td>血漿</td></tr>
+        <tr><td>Glycolate 資料</td><td>IFU 未列</td><td>IFU 未列</td><td>IFU 未列</td></tr>
+        <tr><td>對本案的意義</td><td>319.8 超出線性，必經稀釋；icterus 1+ 超出 IFU 測試的 8 mg/dL</td><td>同原理 → 一致性無法排除干擾</td><td>同原理 → 一致性無法排除干擾</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="correlation">
+  <h2>Clinical correlation <span class="zh">臨床表現、檢驗結果、可能解釋與驗證步驟</span></h2>
+  <p class="lede">分成「已知事實」、「合理推論」、「仍待確認」三層，避免把機轉說成已證實。</p>
+
+  <h3>Anion gap 與乳酸同步上升</h3>
+  <div class="scroll">
+    <table>
+      <caption>校正 AG = AG + 2.5 × (4.0 − albumin)；ΔAG 以正常 AG 12 計；HCO₃⁻ 為血氣計算值</caption>
+      <thead><tr><th>時間</th><th class="num">Na</th><th class="num">Cl</th><th class="num">HCO₃⁻</th><th class="num">AG</th><th class="num">校正 AG</th><th class="num">ΔAG</th><th class="num">Lactate mmol/L</th><th class="num">未解釋陰離子</th></tr></thead>
+      <tbody>
+        <tr><td>09/09 22:05</td><td class="num">138</td><td class="num">103</td><td class="num">8.5</td><td class="num">26.5</td><td class="num">30.8</td><td class="num">18.8</td><td class="num">2.6</td><td class="num hi">≈16</td></tr>
+        <tr><td>09/10 02:56</td><td class="num">149</td><td class="num">101</td><td class="num">17.6</td><td class="num">30.4</td><td class="num">34.7</td><td class="num">22.7</td><td class="num">5.2</td><td class="num hi">≈17</td></tr>
+        <tr><td>09/10 11:49</td><td class="num">166</td><td class="num">102</td><td class="num">31.4</td><td class="num">32.6</td><td class="num">36.1</td><td class="num">24.1</td><td class="num">13.1</td><td class="num">≈11</td></tr>
+        <tr><td>09/10 17:12</td><td class="num">169</td><td class="num">100</td><td class="num">31.6</td><td class="num">37.4</td><td class="num">40.9</td><td class="num">28.9</td><td class="num">16.1</td><td class="num">≈13</td></tr>
+        <tr><td>09/10 22:34</td><td class="num">168</td><td class="num">99</td><td class="num">26.7</td><td class="num">42.3</td><td class="num">45.8</td><td class="num">33.8</td><td class="num">24.3</td><td class="num">≈9</td></tr>
+        <tr><td>09/11 04:40</td><td class="num">163</td><td class="num">97</td><td class="num">19.5</td><td class="num">46.5</td><td class="num">50.0</td><td class="num">38.0</td><td class="num">25.8</td><td class="num">≈12</td></tr>
+        <tr><td>09/11 11:50</td><td class="num">173</td><td class="num">93</td><td class="num">28.5</td><td class="num">51.5</td><td class="num">55.0</td><td class="num">43.0</td><td class="num hi">35.5</td><td class="num">≈8</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h4><span class="tag fact">已知事實</span></h4>
+      <p>乳酸與 ΔAG 從 09/10 起幾乎平行上升；pH 在 09/10 中午後反而正常或偏鹼（BE 正值），同時 Na 由 138 升至 173。</p>
+      <p>Trinder 內源性干擾（黃疸、溶血、ascorbate、NAC）在 IFU 中皆為<strong>負向偏差</strong>。</p>
+    </div>
+    <div class="card">
+      <h4><span class="tag inf">合理推論</span></h4>
+      <p>休克（失血性＋敗血性）＋ shock liver（AST 6290、AST&gt;ALT）＋ Child C 肝硬化＋PV/HV 栓塞＋AKI，足以解釋 Type A 與 Type B 乳酸同時大量生成、且清除停擺。</p>
+      <p>AG 與乳酸吻合<strong>不能</strong>區分 L-lactate 與 glycolate：兩者在 AG 上的貢獻相同。</p>
+    </div>
+    <div class="card">
+      <h4><span class="tag open">仍待確認</span></h4>
+      <p>乳酸升高期間<strong>未驗</strong>血清滲透壓、ethanol、methanol、ethylene glycol、acetaminophen；無尿液草酸鈣結晶；09/10–11 無 LDH/CK；未做稀釋線性或第二方法確認。</p>
+      <p>09/09 total CO₂ 2.6 mEq/L 與同時間血氣 HCO₃⁻ 8.5 mmol/L 的落差未解釋（可能與採血管未滿或 CO₂ 逸散有關）。</p>
+    </div>
+    <div class="card">
+      <h4>Osmolal gap 的位置</h4>
+      <p>唯一一次血清滲透壓為 08/17 13:23：259 mOsm/kg（同日 Na 121、glucose 97、BUN 18.3 → 計算約 254，OG ≈ 5）。</p>
+      <p>09/09–09/11 未驗 → <strong>本案無法評估 osmolal gap</strong>；題目給的 OG 39 屬情境設定，不可當成病例事實。</p>
+    </div>
+  </div>
+
+  <div class="key">
+    <strong>結論（含確定程度）</strong>
+    <p style="margin:8px 0 0;font-size:15px">本案最可能為<strong>真性 Type A + Type B 乳酸酸中毒</strong>（中度確定：時序、幅度與病程一致，且干擾方向不符）。若套用題目情境（無休克、酗酒、OG 39），則 glycolate 干擾<strong>必須</strong>積極排除，不能僅以「三台儀器結果一致」結案。</p>
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>Knowledge check <span class="zh">4 題互動題：作答後顯示解析與來源</span></h2>
+  <p class="lede">題目測試判讀與推理；標示「教學假設」者為假想情境，不是本病例事實。</p>
+  <div id="quiz-root"></div>
+</section>
+
+<section id="takehome">
+  <h2>Take-home <span class="zh">四點帶走</span></h2>
+  <ul class="plain">
+    <li><strong>Glycolate 是 LOD 的受質</strong>：干擾不限於血氣機，LOD 比色法也可能受影響；methanol 的 formate 則不干擾。</li>
+    <li><strong>Trinder 的內源性干擾多為負向</strong>（黃疸、溶血、ascorbate、NAC）→ 無法製造假性升高；但本案 319.8 的黃疸程度已超出 IFU 測試範圍，屬「未涵蓋」而非「已排除」。</li>
+    <li><strong>三台 LOD 平台一致不代表沒有干擾</strong>；真正有鑑別力的是 LDH UV 法或 GC-MS，其次是稀釋線性與 reaction monitor。</li>
+    <li><strong>AG 與乳酸吻合無法區分 lactate 與 glycolate</strong>；要區分必須靠 osmolal gap（先校正 ethanol）、尿液草酸鈣結晶或直接測定。</li>
+  </ul>
+</section>
+
+<section id="refs">
+  <h2>References <span class="zh">可核查來源（內容更新日：2026-10-28）</span></h2>
+  <ol class="refs">
+    <li>Tintu A, Rouwet E, Russcher H, et al. Interference of ethylene glycol with (L)-lactate measurement is assay-dependent. <em>Ann Clin Biochem</em> 2013;50(Pt 1):70–72. PMID 23129723. <a href="https://pubmed.ncbi.nlm.nih.gov/23129723/" target="_blank" rel="noopener">PubMed</a></li>
+    <li>Brindley PG, Butler MS, Cembrowski G, Brindley DN. Falsely elevated point-of-care lactate measurement after ingestion of ethylene glycol. <em>CMAJ</em> 2007;176(8):1097–1099. PMID 17420492. <a href="https://www.cmaj.ca/content/176/8/1097" target="_blank" rel="noopener">CMAJ</a></li>
+    <li>Schelling JR, Howard RL, Winter SD, Linas SL. Increased osmolal gap in alcoholic ketoacidosis and lactic acidosis. <em>Ann Intern Med</em> 1990;113(8):580–582. <a href="https://doi.org/10.7326/0003-4819-113-8-580" target="_blank" rel="noopener">doi</a></li>
+    <li>Beckman Coulter. <em>LACT reagent, OSR6193 — instructions for use</em> (AU systems), 2022. <a href="https://www.beckmancoulter.com/download/file/phxB01249AN-EN_US/B01249AN?type=pdf" target="_blank" rel="noopener">IFU (DxC LACT)</a></li>
+    <li>Roche Diagnostics. <em>LACT2 Lactate Gen.2 — method sheet, cobas c 311/501/502</em>, V15.0, 2024-08.</li>
+    <li>Abbott. <em>Lactic Acid2 (LactA2) — Alinity c instructions for use</em>, 807336R01, 2022.</li>
+    <li>Ischemic hepatitis — intercorrelated pathology. <em>PMC</em> PMC5972787. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5972787/" target="_blank" rel="noopener">全文</a></li>
+    <li>Type B lactic acidosis: diagnosis, etiology and treatment — an educational review. PMC13568782.</li>
+  </ol>
+  <p style="font-size:13px;color:var(--ink2)">Tietz《Textbook of Clinical Chemistry》與 Henry《Clinical Diagnosis and Management by Laboratory Methods》本次<strong>未取得全文</strong>，因此本站不以兩者名義陳述內容；原理敘述一律引用可查證的原廠 IFU 與原始文獻。</p>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0 0 6px">本站為 2026/11/02 檢驗醫學部晨會之教學工具，<strong>不是臨床診斷工具</strong>；所有數值來自當日簡報所依據之去識別化病例資料。</p>
+    <p style="margin:0">無登入、無追蹤、無 Cookie、無資料蒐集。內容更新：2026-10-28。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---------- tabs ---------- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(tab){
+    tabs.forEach(function(t){
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      if(panel) panel.hidden = !on;
+    });
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(t); });
+    t.addEventListener('keydown', function(e){
+      var k = e.key, n = null;
+      if(k === 'ArrowRight' || k === 'ArrowDown') n = tabs[(i+1)%tabs.length];
+      if(k === 'ArrowLeft'  || k === 'ArrowUp')   n = tabs[(i-1+tabs.length)%tabs.length];
+      if(k === 'Home') n = tabs[0];
+      if(k === 'End')  n = tabs[tabs.length-1];
+      if(n){ e.preventDefault(); n.focus(); select(n); }
+    });
+  });
+
+  /* ---------- quiz ---------- */
+  var QUIZ = [
+    {
+      stem: '1. A blood-gas analyser reports lactate 28 mmol/L, while the same specimen on a wet-chemistry LOD colorimetric assay reports 9 mmol/L. Ethylene glycol ingestion is suspected. Which statement best explains the gap?',
+      opts: [
+        'The blood-gas value must be correct because amperometric detection is more specific.',
+        'Both methods use lactate oxidase; glycolate is a substrate for LOD, so the amperometric method can read higher — the gap itself is the clue, and confirmation needs an orthogonal method.',
+        'The colorimetric result must be falsely low because bilirubin interferes positively.',
+        'The gap is irrelevant; anion gap alone confirms the diagnosis.'
+      ],
+      answer: 1,
+      why: 'Glycolate 是 LOD 的受質，干擾發生在酵素層次，因此電流法血氣機也可能假性升高，且文獻顯示部分機台（如 ABL700）高估更明顯。差距本身是線索，但仍需 GC-MS 或 LDH 法確認。',
+      src: 'Tintu 2013 (PMID 23129723)；Brindley 2007 (CMAJ 176:1097)'
+    },
+    {
+      stem: '2. On the Beckman AU LACT (OSR6193) IFU, which of the following is a reported interference that biases lactate DOWNWARD?',
+      opts: [
+        'Total bilirubin up to 8 mg/dL',
+        'Haemoglobin up to 5 g/L',
+        'N-acetylcysteine therapy',
+        'Intralipid up to 1000 mg/dL'
+      ],
+      answer: 2,
+      why: 'IFU 明列 NAC（以及採血時正使用 metamizol/dipyrone）會造成假性<strong>偏低</strong>；黃疸、溶血、ascorbate、脂血在測試濃度內干擾皆小（分別 <10%、<5%、<10%、<3%）。方向很重要：偏低無法解釋本案的假性升高。',
+      src: 'Beckman Coulter OSR6193 IFU（Interferences / Limitations）'
+    },
+    {
+      stem: '3. 教學假設：病人 lactate 35.5 mmol/L、AG 41、無休克、有酗酒與疑似假酒史。計算 osmolal gap 前，下一步最應該先做什麼？',
+      opts: [
+        '直接以 AG 41 認定為乳酸酸中毒，不需其他檢查',
+        '先測血清 ethanol，再以校正後的 osmolal gap 判讀，並保留檢體送 toxic alcohol／glycolate 檢測',
+        '立刻重抽 lactate，若仍高即可確定是真性乳酸',
+        '以尿液滲透壓取代血清滲透壓計算 osmolal gap'
+      ],
+      answer: 1,
+      why: 'Schelling 1990：乳酸酸中毒平均 OG 17.4、AKA 26.9，但扣除 ethanol 後分別降至約 10.3 與 11.1。因此 OG 高必須先校正 ethanol；重抽同一原理的 LOD 檢驗無法排除交叉反應。',
+      src: 'Schelling 1990 (Ann Intern Med 113:580)'
+    },
+    {
+      stem: '4. In this patient the lactate rose from 2.6 to 35.5 mmol/L over 38 hours, with AST rising from 74 to 6290 U/L after an episode of hypotension. Which combination best explains the magnitude?',
+      opts: [
+        'Isolated hepatic clearance failure only',
+        'Type A (haemorrhagic + septic shock, vasopressors) plus Type B (tumour Warburg effect, sepsis, hyperammonaemia) production, with hepatic and renal clearance both failing',
+        'Assay interference by bilirubin, because bilirubin falsely raises Trinder assays',
+        'Methanol ingestion, because formate cross-reacts with lactate oxidase'
+      ],
+      answer: 1,
+      why: '肝臟負責 50–70%、腎臟約 30% 的乳酸清除；Child C ＋ PV/HV 栓塞 ＋ shock liver ＋ AKI 使清除幾乎停擺，同時休克（Type A）與腫瘤／敗血／高血氨（Type B）大量生成。黃疸在 Trinder 系統為負向干擾；formate 不干擾乳酸測定。',
+      src: '病例資料（AST/ALT、乳酸序列）＋ Type B lactic acidosis review (PMC13568782)'
+    }
+  ];
+
+  var root = document.getElementById('quiz-root');
+  QUIZ.forEach(function(q, qi){
+    var wrap = document.createElement('div');
+    wrap.className = 'q';
+    var html = '<p class="stem">' + q.stem + '</p><div class="opts" role="radiogroup" aria-label="選項">';
+    q.opts.forEach(function(o, oi){
+      html += '<label><input type="radio" name="q'+qi+'" value="'+oi+'"><span>' + o + '</span></label>';
+    });
+    html += '</div><button class="btn" type="button">看解答</button>';
+    html += '<div class="fb" hidden></div>';
+    wrap.innerHTML = html;
+    root.appendChild(wrap);
+
+    var btn = wrap.querySelector('.btn');
+    var fb  = wrap.querySelector('.fb');
+    var labels = Array.prototype.slice.call(wrap.querySelectorAll('.opts label'));
+    btn.addEventListener('click', function(){
+      var picked = wrap.querySelector('input:checked');
+      labels.forEach(function(l, i){
+        l.classList.remove('correct','wrong');
+        if(i === q.answer) l.classList.add('correct');
+        if(picked && +picked.value === i && i !== q.answer) l.classList.add('wrong');
+      });
+      var head = picked
+        ? (picked.value == q.answer ? '✔ 正確。' : '✘ 再想一下。正確答案是第 ' + (q.answer+1) + ' 個選項。')
+        : '尚未作答 — 正確答案是第 ' + (q.answer+1) + ' 個選項。';
+      fb.className = 'fb ' + (picked && picked.value == q.answer ? 'good' : 'bad');
+      fb.innerHTML = '<strong>' + head + '</strong><br>' + q.why +
+        '<span class="src">來源：' + q.src + '</span>';
+      fb.hidden = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>
