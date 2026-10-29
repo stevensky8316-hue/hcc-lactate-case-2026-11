@@ -1,42 +1,39 @@
-# Lactate 319.8 mg/dL — case learning site
+# Lactate case learning site
 
-Static teaching site for the 2026/11/02 Laboratory Medicine morning-meeting case report
-(a 76-year-old man with HBV-related Child C cirrhosis, recurrent HCC, refractory shock, and a
-terminal central-laboratory lactate of 319.8 mg/dL).
+A static, de-identified teaching companion for laboratory medicine. The page preserves six sections: Case recap, Method explorer, Clinical correlation, Knowledge check, Take-home summary and References.
 
-## What it is
+## Run and build
 
-A single self-contained page (`index.html`) — no build step, no framework, no external CDN,
-no tracking, no cookies, no login.
+No dependencies or build step are required. From this directory:
 
-- **Case recap** — de-identified timeline and the original consult question (Chinese, verbatim).
-- **Method explorer** — tabbed comparison of Beckman AU OSR6193, Roche cobas LACT2,
-  Abbott Alinity Lactic Acid2, the LDH-UV reference method, and glycolate cross-reactivity.
-- **Clinical correlation** — anion gap / lactate table, osmolal gap, and an explicit split between
-  established fact, reasonable inference, and still-unverified items.
-- **Knowledge check** — 4 multiple-choice questions with explanations and sources.
-- **Take-home** and **References** with verifiable links.
-
-## Run locally
-
-```bash
-python3 -m http.server 8000    # then open http://localhost:8000
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-## Deploy
+Open http://127.0.0.1:8000 . Stop the temporary server when finished.
 
-Any static host works. This copy is published with GitHub Pages from the `main` branch root.
-A Vercel deployment was not performed because no Vercel account/token was available in the build
-environment (see the case folder's `99-notes.md`).
+The public files are `index.html`, `style.css`, `app.js`, `data.js` and `vercel.json`. Serve them as static files. Vercel uses framework `null`, with this directory as the output.
 
-## Data protection
+## Content
 
-- No patient name, chart number, date of birth, or exact admission dates that could identify the
-  patient beyond age/sex and clinical facts.
-- No source PDFs, no textbook scans, no PACS screenshots (the supplied screenshots carried a name
-  and chart number in the overlay, so they were excluded).
-- Numbers on the site match the laboratory summary report used for the presentation.
+- Seven representative time points share one data array for chart, slider and native table.
+- Method tabs use roving tab focus with Left/Right and Home/End keys.
+- Evidence filters distinguish observations/derived calculations, inferences and unknowns.
+- Five single-answer questions show an explanation for every option and source links.
+- Answers exist only in page memory. There is no login, analytics, storage, external font, CDN or network submission.
 
-## Caveat
+## Evidence boundaries
 
-Teaching material only — **not** a clinical decision tool.
+References identify textbook chapters, actual manufacturer-authored IFU exemplars, primary papers, and material read only as abstracts. The reporter confirmed the local model as DxC 700 AU. Its LOx/POD method is supported by the original methodology study and AU IFU exemplar. Local reagent/version/lot remains unconfirmed. The older SYNCHRON LACT IFU also describes LOx/POD for DxC 600/800; it is not a substitute for this instrument's IFU. The assay literature supports method-specific susceptibility; linear dilution and clinical plausibility do not independently establish specificity.
+
+CVVH-B is a bicarbonate medicine name. CRRT was planned/ordered in supplied records; delivered treatment was not verified. No dialysis-response claim is made.
+
+## Privacy and publication
+
+Only relative day/time, an older adult man, necessary laboratory values and paraphrased teaching content are public. Do not add patient names, dates of birth, chart/bed/order numbers, exact admission dates, raw records, PACS images, source attachments, textbook scans, credentials, or private audit notes. Source records remain outside this repository.
+
+A prior repository revision contained stronger claims and exact case dates. This branch corrects current public content without rewriting Git history. Do not publish additional original data while reviewing.
+
+## Review status
+
+Prepared on VPS for content and browser review. A successful Git commit alone does not mean Vercel deployment or production validation occurred. The coordinating task owns publication and records the verified production URL separately.
